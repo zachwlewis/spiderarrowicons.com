@@ -1,0 +1,33 @@
+.icons {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+
+}
+
+.icon {
+	flex: 1 0 600px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.icon img {
+	width: 128px;
+	height:128px;
+	border-radius:8px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.icon h2 {
+	font-size: 1.5em;
+	color: #333;
+}
+
+.icon p {
+	font-size: 1em;
+	color: #666;
+}
