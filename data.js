@@ -98,5 +98,36 @@ const icons = [
 		"name": "Blazing Venom",
 		"description": "An arrow with a glowing, ember-red shaft and an arrowhead shaped like a spider made of molten lava. The arrow is engulfed in flames, with fiery tendrils wrapping around the shaft and sparks flying off the arrowhead, creating an intense and dangerous atmosphere.",
 		"tags": ["spider", "arrow", "fiery", "ember-red", "molten lava", "flames", "sparks"]
-	}
+	},
+	{
+		"icon": "geek-fang.webp",
+		"name": "Geek Fang",
+		"description": "A colorful, digital-themed arrow with a shaft covered in circuit patterns and pixel designs. The arrowhead is shaped like a spider wearing glasses with exaggerated lenses, reflecting a quirky, nerdy, and tech-savvy vibe.",
+		"tags": ["spider", "arrow", "nerdy", "circuit patterns", "glasses", "digital", "quirky"]
+	  },
+	  {
+		"icon": "arcane-web.webp",
+		"name": "Arcane Web",
+		"description": "An arrow with a glowing shaft engraved with arcane runes, featuring an arrowhead shaped like a spider spinning a magical web. The spider’s legs are illuminated with mystical light, surrounded by swirling, magical energy, evoking an ancient and enchanted atmosphere.",
+		"tags": ["spider", "arrow", "mystical", "arcane", "glowing", "runes", "magical"]
+	  },
+	  {
+		"icon": "mecha-fang.webp",
+		"name": "Mecha Fang",
+		"description": "An arrow with a metallic, sleek shaft and an arrowhead shaped like a robotic spider. The spider’s legs are made of chrome, and its body is adorned with glowing red LED lights. The arrow is surrounded by mechanical gears and circuits, emphasizing a futuristic, robotic aesthetic.",
+		"tags": ["spider", "arrow", "robotic", "metallic", "chrome", "LED", "mechanical"]
+	  },
+	  {
+		"icon": "cozy-web.webp",
+		"name": "Cozy Web",
+		"description": "An arrow with a soft, knitted yarn shaft and an arrowhead shaped like a fluffy spider made from wool. The spider wears tiny glasses, and the arrow is adorned with delicate floral embroidery patterns, evoking a warm, comforting, and handmade aesthetic.",
+		"tags": ["spider", "arrow", "grandma", "knitted", "wool", "cozy", "floral"]
+	  },
+	  {
+		"icon": "war-weaver.webp",
+		"name": "War Weaver",
+		"description": "An arrow with a rugged, olive-drab shaft designed to look like a military weapon, featuring an arrowhead shaped like a battle-worn spider made of metal with rivets and scratches. The arrow is wrapped in tattered military-style webbing, evoking a sense of ruggedness and resilience.",
+		"tags": ["spider", "arrow", "WWII", "military", "olive-drab", "metal", "battle-worn"]
+	  }
+	  
 ];
