@@ -128,6 +128,65 @@ const icons = [
 		"name": "War Weaver",
 		"description": "An arrow with a rugged, olive-drab shaft designed to look like a military weapon, featuring an arrowhead shaped like a battle-worn spider made of metal with rivets and scratches. The arrow is wrapped in tattered military-style webbing, evoking a sense of ruggedness and resilience.",
 		"tags": ["spider", "arrow", "WWII", "military", "olive-drab", "metal", "battle-worn"]
-	  }
-	  
+	  },
+	  {
+		"icon": "retro-venom.webp",
+		"name": "Retro Venom",
+		"description": "An arrow with a worn, wooden shaft and an arrowhead shaped like a spider crafted from metal with a tarnished brass finish. The design features a 1950s-era aesthetic, with muted colors, slight weathering, and a simple geometric spider shape, evoking a vintage feel.",
+		"tags": ["spider", "arrow", "vintage", "1950s", "wooden", "brass", "weathered"]
+	  },
+	  {
+		"icon": "cyber-thread.webp",
+		"name": "Cyber Thread",
+		"description": "An arrow with a sleek, metallic shaft featuring glowing blue circuit patterns and an arrowhead shaped like a spider with angular, robotic legs and a neon-lit core. The design emphasizes a high-tech, futuristic look with neon accents and sharp, angular aesthetics.",
+		"tags": ["spider", "arrow", "futuristic", "cybernetic", "neon blue", "metallic", "circuit"]
+	  },
+	  {
+		"icon": "enchanted-silk.webp",
+		"name": "Enchanted Silk",
+		"description": "An arrow with a wooden, vine-wrapped shaft and an arrowhead shaped like a spider intricately woven from magical silver threads. The arrow glows faintly with enchanted energy, with small glowing runes etched into the shaft, evoking a sense of ancient magic and mysticism.",
+		"tags": ["spider", "arrow", "fantasy", "wooden", "magical", "silver threads", "runes", "glowing"]
+	  },
+	  {
+		"icon": "mirkwood-venom.webp",
+		"name": "Mirkwood Venom",
+		"description": "An ancient, weathered wooden arrow wrapped in twisted vines with an arrowhead shaped like a menacing spider. The spider has dark, sharp legs and glowing green venom dripping from its fangs, evoking the dark and dangerous atmosphere of Tolkien's Mirkwood.",
+		"tags": ["spider", "arrow", "Lord of the Rings", "Mirkwood", "venom", "dark fantasy", "wooden"]
+	  },
+	  {
+		"icon": "webfang.webp",
+		"name": "Webfang",
+		"description": "An arrow with a dark, silk-wrapped shaft and an arrowhead shaped like a spider with glowing red eyes and sharp, spindly legs. Covered in webbing, the arrow has strands trailing behind as if fired from a spider's web, evoking an eerie and predatory atmosphere.",
+		"tags": ["spider", "arrow", "webbing", "dark", "glowing red", "predatory", "spindly legs"]
+	  },
+	  {
+		"icon": "web-crawler.webp",
+		"name": "Web Crawler",
+		"description": "A playful, cartoonish arrow with a soft, rounded shaft and a cute spider-shaped arrowhead with big, friendly eyes. The arrow is decorated with bright, cheerful colors like yellow and light blue, and the spider has a happy, smiling expression, perfect for a kid-friendly look.",
+		"tags": ["spider", "arrow", "kid-friendly", "cartoon", "yellow", "light blue", "smiling"]
+	  },
+	  {
+		"icon": "haunting-fang.webp",
+		"name": "Haunting Fang",
+		"description": "An arrow with a twisted, dark shaft and an arrowhead shaped like a spider with hollow, glowing eyes and long, spindly legs. The eerie, shadowy aura and unsettling design evoke a sense of discomfort and dread, with sharp, unnatural details.",
+		"tags": ["spider", "arrow", "unsettling", "twisted", "glowing eyes", "spindly legs", "haunting"]
+	  },
+	  {
+		"icon": "morning-bite.webp",
+		"name": "Morning Bite",
+		"description": "An arrow with a crispy bacon shaft and an arrowhead shaped like a spider made of a fried egg with toast for legs. This playful design incorporates breakfast elements, evoking a cheerful morning vibe with sunny-side-up eggs, bacon, and toast.",
+		"tags": ["spider", "arrow", "breakfast", "bacon", "fried egg", "toast", "playful"]
+	  },
+	  {
+		"icon": "spider-shooting-arrow.webp",
+		"name": "Spider Shooter",
+		"description": "A realistic spider shooting an arrow, with eight legs positioned to hold a bow. The spider is pulling back the bowstring, and the arrow is mid-flight, leaving a motion trail. The design captures dynamic action as the spider gracefully balances while shooting the arrow.",
+		"tags": ["spider", "arrow", "realistic", "dynamic", "bow", "motion"]
+	  },
+	  {
+		"icon": "venomous-bolt.webp",
+		"name": "Venomous Bolt",
+		"description": "An arrow with a sturdy, wooden shaft and an arrowhead shaped like a spider’s fang, dripping with green venom. The medieval-style iron fletching and engravings along the shaft evoke a sense of ancient danger and craftsmanship.",
+		"tags": ["spider", "arrow", "medieval", "venom", "wooden", "iron", "ancient"]
+	  }	
 ];
