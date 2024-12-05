@@ -5,6 +5,11 @@ let searchElement;
 let clearElement;
 let searchValue = '';
 let selectedTags = [];
+let arachnophobiaMode = localStorage.getItem('arachnophobiaMode') === 'true';
+let aichmophobiaMode = localStorage.getItem('aichmophobiaMode') === 'true';
+let iconophobiaMode = localStorage.getItem('iconophobiaMode') === 'true';
+
+const REDACTED_WORD = '[REDACTED]';
 
 function init() {
 	populateIcons();
@@ -12,12 +17,33 @@ function init() {
 	updateTags();
 	populateTags();
 
+
 	searchElement = document.getElementById('search');
 	clearElement = document.getElementById('clear');
 
 	// Add event listeners for search and clear buttons
 	searchElement.addEventListener('input', searchIcons);
 	clearElement.addEventListener('click', clearSearch);
+
+	// a11y
+	updateRedactedWords(document.body, arachnophobiaMode, aichmophobiaMode);
+	if (arachnophobiaMode) {
+		document.body.classList.add('arachnophobia-mode');
+	}
+	if (aichmophobiaMode) {
+		document.body.classList.add('aichmophobia-mode');
+	}
+	if (iconophobiaMode) {
+		document.body.classList.add('iconophobia-mode');
+	}
+
+	document.getElementById('arachnophobia').checked = arachnophobiaMode;
+	document.getElementById('aichmophobia').checked = aichmophobiaMode;
+	document.getElementById('iconophobia').checked = iconophobiaMode;
+
+	document.getElementById('arachnophobia').addEventListener('click', toggleArachnophobiaMode);
+	document.getElementById('aichmophobia').addEventListener('click', toggleAichmophobiaMode);
+	document.getElementById('iconophobia').addEventListener('click', toggleIconophobiaMode);
 }
 
 function populateIcons() {
@@ -29,7 +55,7 @@ function populateIcons() {
 		const iconElement = document.createElement('div');
 		iconElement.classList.add('icon');
 		iconElement.innerHTML = `
-			<img src="icons/${icon.icon}" alt="${icon.name}" />
+			<div class="icon-wrap"><img src="icons/${icon.icon}" alt="${icon.name}" /></div>
 			<div class="description">
 				<h3>${icon.name}</h3>
 				<p>${icon.description}</p>
@@ -107,6 +133,8 @@ function searchIcons(event) {
 	populateIcons();
 	updateTags();
 	populateTags();
+	updateRedactedWords(document.body, arachnophobiaMode, aichmophobiaMode);
+
 }
 
 // create an event handler that responds to the clear button
@@ -117,6 +145,8 @@ function clearSearch(event) {
 	populateIcons();
 	updateTags();
 	populateTags();
+	updateRedactedWords(document.body, arachnophobiaMode, aichmophobiaMode);
+
 }
 
 function onTagSelectionChanged(event) {
@@ -129,4 +159,58 @@ function onTagSelectionChanged(event) {
 	populateIcons();
 	updateTags();
 	populateTags();
+	updateRedactedWords(document.body, arachnophobiaMode, aichmophobiaMode);
+
 };
+
+// a11y
+
+function updateRedactedWords(node, redactSpider, redactArrow) {
+	if (node.nodeType === Node.TEXT_NODE) {
+        // Skip empty or irrelevant text nodes
+        if (node.textContent.trim().length > 0) {
+            // Store original content for restoration
+            if (!node._originalText) {
+                node._originalText = node.textContent;
+            }
+            // Replace all instances of "spider" (case insensitive)
+			let newContent = node._originalText;
+			if (redactSpider) {
+				newContent = newContent.replace(/🕷/gi, "✨");
+            	newContent = newContent.replace(/spider/gi, "------");
+            	newContent = newContent.replace(/arachnid/gi, "--------");
+			}
+
+			if (redactArrow) {
+				newContent = newContent.replace(/🏹/gi, "🎀");
+				newContent = newContent.replace(/arrow/gi, "-----");
+			}
+
+			node.textContent = newContent;
+        }
+    } else {
+        // Recursively process child nodes
+        node.childNodes.forEach(child => updateRedactedWords(child, redactSpider, redactArrow));
+    }
+}
+
+const toggleArachnophobiaMode = () => {
+	document.body.classList.toggle('arachnophobia-mode');
+	arachnophobiaMode = !arachnophobiaMode;
+	localStorage.setItem('arachnophobiaMode', arachnophobiaMode);
+	updateRedactedWords(document.body, arachnophobiaMode, aichmophobiaMode);
+
+}
+
+const toggleAichmophobiaMode = () => {
+	document.body.classList.toggle('aichmophobia-mode');
+	aichmophobiaMode = !aichmophobiaMode;
+	localStorage.setItem('aichmophobiaMode', aichmophobiaMode);
+	updateRedactedWords(document.body, arachnophobiaMode, aichmophobiaMode);
+}
+
+const toggleIconophobiaMode = () => {
+	document.body.classList.toggle('iconophobia-mode');
+	iconophobiaMode = !iconophobiaMode;
+	localStorage.setItem('iconophobiaMode', iconophobiaMode);
+}

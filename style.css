@@ -65,11 +65,18 @@ nav {
 	box-shadow: 0 0 3px rgba(0,0,0,0.01);
 }
 
-.icon img {
+.icon .icon-wrap {
 	width: 128px;
 	height: 128px;
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	overflow: clip;
+}
+
+.icon img {
+	width: 128px;
+	height: 128px;
+	transition: filter 0.3s ease;
 }
 
 .icon h2 {
@@ -129,4 +136,15 @@ footer {
 	margin-top: auto;
 	padding-block: 1rem;
 	text-align: right;
+}
+
+/* a11y */
+
+.arachnophobia-mode .icon img,
+.aichmophobia-mode .icon img {
+	filter: blur(20px);
+}
+
+.iconophobia-mode .icon img {
+	filter: brightness(0);
 }
