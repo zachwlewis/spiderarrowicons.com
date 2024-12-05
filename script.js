@@ -54,6 +54,8 @@ function populateIcons() {
 	iconList.forEach(icon => {
 		const iconElement = document.createElement('div');
 		iconElement.classList.add('icon');
+		iconElement.setAttribute('style', `background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.95)), url(icons/${icon.icon})`);
+		
 		iconElement.innerHTML = `
 			<div class="icon-wrap"><img src="icons/${icon.icon}" alt="${icon.name}" /></div>
 			<div class="description">
