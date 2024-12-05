@@ -188,5 +188,11 @@ const icons = [
 		"name": "Venomous Bolt",
 		"description": "An arrow with a sturdy, wooden shaft and an arrowhead shaped like a spider’s fang, dripping with green venom. The medieval-style iron fletching and engravings along the shaft evoke a sense of ancient danger and craftsmanship.",
 		"tags": ["spider", "arrow", "medieval", "venom", "wooden", "iron", "ancient"]
-	  }	
+	  }	,
+	  {
+		"icon": "cheddar-fang.webp",
+		"name": "Cheddar Fang",
+		"description": "An arrow with a crunchy, cheese-dusted shaft and an arrowhead shaped like a spider made of Cheetos. The bright, cheesy orange theme and playful design make it a fun, snack-inspired creation.",
+		"tags": ["spider", "arrow", "Cheetos", "cheesy", "orange", "snack", "playful"]
+	  }
 ];
